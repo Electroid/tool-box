@@ -1,0 +1,5 @@
+name: ToolBox
+version: 0.1
+main: me.electroid.toolbox.ToolBox
+author: ElectroidFilms
+description: A basic utilities plugin with helpful commands!
