@@ -34,19 +34,7 @@ public class BroadcastTool extends Tool {
     @CommandPermissions("toolbox.broadcast")
     @Console
     public static void list(final CommandContext args, final CommandSender sender) {
-        Collection<? extends Player> players = Bukkit.getOnlinePlayers();
-        if (args.argsLength() >= 1) {
-            players = new PlayerFilter().evaluate((Collection<Player>) players, sender, args.getRemainingString(0));
-        }
-        if (players.size() == 0) {
-            sender.sendMessage(ChatColor.RED + "No players online match the given filter!");
-        } else {
-            List<String> names = new ArrayList<String>();
-            for (Player player : players) {
-                names.add(player.getDisplayName(sender));
-            }
-            sender.sendMessage("(" + names.size() + "/" + Bukkit.getMaxPlayers() + "): " + names.toString());
-        }
+        // TODO
     }
 
 }
