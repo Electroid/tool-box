@@ -31,6 +31,13 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>overcast</id>
+            <url>https://repo.oc.tc/content/repositories/public</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
